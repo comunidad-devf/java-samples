@@ -10,10 +10,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Cerveza bohemia = new Cerveza("Bohemia obscura", 3.5);
+        Libro harryPotter = new Libro("La piedra filosofal", 300);
+        Autor jkRowlling = new Autor("JK Rowlling", 'f');
 
-        bohemia.refrescar();
-        bohemia.digestion();
-        bohemia.evaporar();
+        harryPotter.addAutor(new Autor("JK Rowlling", 'f'));
+        harryPotter.addAutor(new Autor("JD Johnson", 'm'));
+
+        harryPotter.printAutor();
     }
 }
